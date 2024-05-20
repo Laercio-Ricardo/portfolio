@@ -9,26 +9,28 @@ body {
     color: #fff;
 }
 .navbar {
-    background-color: #000;
+    background-color:red; /* Fundo preto */
 }
-.navbar-brand, .nav-link {
-    color: #fff !important;
-    position: relative;
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: bold;
+    transition: transform 0.3s;
+    
 }
-.nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    display: block;
-    background: #fff;
-    transition: width 0.3s;
-    bottom: -5px;
-    left: 0;
+
+.navbar-nav .nav-link:hover {
+    color: orangered !important; /* Cor dos links ao passar o mouse */
+    transform: translateY(-3px); /* Efeito de levitar ao passar o mouse */
 }
-.nav-link:hover::after {
-    width: 100%;
+.navbar-toggler {
+    border-color: #fff;
 }
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
 .jumbotron {
     text-align: center;
     background-color: #000;
